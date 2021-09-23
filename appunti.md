@@ -4,3 +4,4 @@ la sidebar e l'header_main, verrà posizionata in modo fisso
 allo stesso modo ho aggiunto anche le altre sezioni, passo ai contenuti
 Ho pensato che anche il footer va posizionato con fixed
 ridimensionata la sidebar
+Complete content sidebar

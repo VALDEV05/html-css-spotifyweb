@@ -14,6 +14,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.list_none{
+    list-style: none;
+}
 /* section structure */
 .site_main{
     height: 100vh;
@@ -49,23 +52,32 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #000;
+    font-weight: 700;
 }
 .top_side_bar{
     width: 100%;
-    background-color: #000;
 }
 .bottom_side_bar{
     width: 100%;
     height: 20%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 10px;
+    
 }
 /*******************  
  /SIDE_BAR content
 *******************/
+/* top side bar */
+/* logo */
 .top_side_bar>img{
     width: 170px;
     padding: 15px;
 }
+/* menu */
 .home, 
 .search, 
 .library{
@@ -81,10 +93,62 @@ body{
     display: inline-block;
     color: #646464;
     padding-left: 10px;
-    font-weight: 700;
 }
+/* playlist */
 .playlist{
     color: #646464;
+    padding-left: 20px;
+}
+.playlist h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.playlist li{
+    margin: 10px 0;
+}
+.box_plus{
+    height: 50px;
+    width: 50px;
+    background-color: #646464;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box_plus i{
+    transform: scale(2);
+    color: #000;
+}
+/* bottom side bar */
+
+hr{
+    width: 90%;
+
+}
+.download,
+.user{
+    display: inline-flex;
+    color:  #646464;
+    margin-top: 15px;
+}
+.download img{
+    height: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.user img{
+    height: 30px;
+    background-color: #646464;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.user .text_user{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
 }
 /*******************  
     /SIDE_BAR

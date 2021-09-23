@@ -34,6 +34,9 @@ body{
     margin-right: 20px;
     text-transform: uppercase;
 }
+.hidden_visibility{
+    visibility: hidden;
+}
 /* section structure */
 .site_main{
     height: 100vh;
@@ -191,8 +194,8 @@ hr{
     position: fixed;
     top: 15%;
     right: 0;
-    background-color: violet;
     padding: 20px;
+    background-color: #141822;
 }
 .header_content_main{
     width: 100%;
@@ -201,20 +204,78 @@ hr{
     justify-content: center;
     align-items: center;
 }
-
+h1{
+    color: white;
+}
 .menu_header_main  li:hover{
     text-decoration: underline;
     border-bottom: 2px solid greenyellow;
 }
-.recently h1{
+.recently{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cover{
+    height: 180px;
+    width: 180px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover i{
+    transform: scale(4);
     color: white;
 }
+.card_song{
+    width: 180px;
+    margin: 30px 20px 0 20px;
+    position: relative;
+}
+.image_song_main{
+    height: 180px;
+    background-size: contain;
+}
+.text_song{
+    text-align: center;
+    margin: 10px 0;
+}
+.text_song h1{
+    color: white;
+    font-size: 15px;
+}
+.text_song p{
+    color: #646464;
+    margin: 5px 0;
+    font-size: 10px;
 
-.image_song
-
-
-
-
+}
+/* immagini card content_main */
+.image_heavy{
+    background-image: url(../spotify/img/metal_lifting.jpg);
+}
+.image_stranger_thinks{
+    background-image: url(../spotify/img/stranger.jpeg);
+}
+.image_quiet_place{
+    background-image: url(../spotify/img/aquietplace.jpeg);
+}
+.image_split{
+    background-image: url(../spotify/img/split.jpeg);
+}
+.image_cure_wellness{
+    background-image: url(../spotify/img/cure.jpeg);
+}
+.image_sinister{
+    background-image: url(../spotify/img/sinister.jpeg);
+}
+/* effetti in hover immagini card */
+.card_song:hover .hidden_visibility{
+    visibility: visible;
+}
 /*******************  
         FOOTER
 *******************/

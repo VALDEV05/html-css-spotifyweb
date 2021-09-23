@@ -8,3 +8,6 @@ Complete content sidebar
 
 Aggiunto bottone header main "btn_head"
 Creato footer
+
+content_main aggiunto il menu centrale di navigazione, 
+aggiunta anche la sezione delle canzoni recenti con relativo effetto

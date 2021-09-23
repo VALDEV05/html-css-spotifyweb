@@ -63,7 +63,7 @@ body{
  /SIDE_BAR stucture
 *******************/
 .side_bar{
-    height: calc(100vh - 15%);
+    height: calc(100vh - 10%);
     width: calc(100vw - 85%);
     position: fixed;
     top: 0;
@@ -173,16 +173,117 @@ hr{
     /SIDE_BAR
 *******************/
 .content_main{
-    border: 1px solid black;
-    height: calc(100vh - 30%);
+    height: calc(100vh - 25%);
     width: calc(100vw - 15%);
     position: fixed;
     top: 15%;
     right: 0;
+    background-color: violet;
 }
 .footer_main{
-    border: 1px solid black;
-    height: calc(100vh - 85%);
+    height: calc(100vh - 90%);
     width: 100vw;
     position: fixed;
+    bottom: 0;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_footer{
+    height: 75%;
+    width: calc(100vw - 2%);
+    display: flex;
+    justify-content: space-between;
+}
+.song,
+.control,
+.player{
+    height: 100%;
+    width: calc(100vw - 85%);
+    background-color: #282828;
+    display: inline-flex;
+}
+.image_song{
+    width: 50px;
+    background-image: url(../spotify/img/sinister.jpeg);
+    background-size: cover;
+}
+.icon_song,
+.icon_control{
+    margin-left: 20px;
+    align-self: center;
+    color: #646464;
+}
+.icon_control{
+    margin-left: 50px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.icon_control .line{
+    background-color: #646464;
+    width: 95px;
+    height: 4px;
+    margin-left: 5px;
+    margin-top: 6px;
+    border-radius: 30px;
+}
+.icon_song i,
+.icon_control i{
+    padding-left: 10px;
+}
+.info_song{
+    margin-left: 18px;
+    align-self: center;
+}
+.info_song h1{
+    color: white;
+    font-size: 15px;
+}
+.info_song p{
+    color: #646464;
+    font-size: 10px;
+
+}
+.player{
+    width: calc(100vw - 60%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top_player,
+.bottom_player{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.top_player{
+    justify-content: center;
+}
+.top_player .icon_play i{
+    margin: 0 12px;
+}
+#play{
+    transform: scale(1.7);
+}
+.bottom_player{
+    justify-content: space-around;
+}
+.bottom_player .line{
+    background-color: #646464;
+    width: 450px;
+    height: 4px;
+    border-radius: 30px;
+}
+.bottom_player .line_white{
+    background-color: #ffffff;
+    width: 110px;
+    height: 4px;
+    border-radius: 30px;
+}
+.bottom_player p{
+    margin: 0 10px;
 }

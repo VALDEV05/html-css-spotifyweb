@@ -7,3 +7,4 @@ ridimensionata la sidebar
 Complete content sidebar
 
 Aggiunto bottone header main "btn_head"
+Creato footer

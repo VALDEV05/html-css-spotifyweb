@@ -1,0 +1,1 @@
+Costruzione layout, seguo ragionamento svolto con figma, ho costruito due blocchi, il primo "quello centrale", il secondo il "footer". Le proporzioni che sto usando sono l'85% per il main e il 15 per il footer

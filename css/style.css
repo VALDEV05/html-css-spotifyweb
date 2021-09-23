@@ -17,6 +17,13 @@ body{
 .list_none{
     list-style: none;
 }
+.btn{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
 /* section structure */
 .site_main{
     height: 100vh;
@@ -32,13 +39,25 @@ body{
     
 }
 .header_main{
+    display: flex;
+    justify-content: end;
+    align-items: center;
     position: relative;
-    border: 1px solid black;
     height: calc(100vh - 85%);
     width: calc(100vw - 15%);
     position: fixed;
     top: 0;
     right: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.btn_head a{
+    text-decoration: none;
+    color: white;  
+}
+.btn_head:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 /*******************  
  /SIDE_BAR stucture
@@ -63,7 +82,6 @@ body{
     height: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: end;
     padding-bottom: 10px;
     
@@ -124,6 +142,7 @@ body{
 /* bottom side bar */
 
 hr{
+    align-self: start;
     width: 90%;
 
 }

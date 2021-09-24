@@ -13,3 +13,20 @@ content_main aggiunto il menu centrale di navigazione,
 aggiunta anche la sezione delle canzoni recenti con relativo effetto
 
 Completata tutta la creazione delle card_song 
+
+    border-left: 5px solid greenyellow
+
+
+Effetti esercizi Spotify 
+    Sidebar	
+        - [x] Hover su menu sidebar, laterale 5px solid #ADFF2F con scritta che da grigia diventa bianca
+        - [x] Sezione playlist, al passaggio ogni cosa diventa bianca
+    Content_main
+        - [x] Menu_header passaggio diventano bianche e bordino sotto tranne in evidenza
+        - [x] Bottone scale1.5
+    Footer	
+        Da sx a dx
+        - [x] Nome con underline
+        - [x] play_centrale scale1.8
+        - [ ] Barre diventano #ADFF2F
+    

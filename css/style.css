@@ -1,5 +1,5 @@
 /*******************  
-    COMMON RULES
+    UTILITY
 *******************/
 *{
     margin: 0;
@@ -34,9 +34,27 @@ body{
     margin-right: 20px;
     text-transform: uppercase;
 }
+.btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .hidden_visibility{
     visibility: hidden;
 }
+/*******************  
+      /UTILITY
+*******************/
+
+
+
+
+
+
+
+
+
+
+
 /* section structure */
 .site_main{
     height: 100vh;
@@ -69,10 +87,19 @@ body{
     text-decoration: none;
     color: white;  
 }
-.btn_head:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+/*******************  
+    header_main
+*******************/
+
+
+
+
+
+
+
+
+
+
 /*******************  
  /SIDE_BAR stucture
 *******************/
@@ -101,7 +128,7 @@ body{
     
 }
 /*******************  
- /SIDE_BAR content
+  SIDE_BAR content
 *******************/
 /* top side bar */
 /* logo */
@@ -168,31 +195,45 @@ hr{
 }
 .download img{
     height: 20px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin: 0 15px 15px 20px;
 }
 .user img{
     height: 30px;
     background-color: #646464;
     padding: 5px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin: 0 15px;
+
 }
 .user .text_user{
     font-size: 20px;
     font-weight: 800;
     color: white;
 }
+
 /*******************  
-    /SIDE_BAR
+/SIDE_BAR
 *******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*******************  
-    content_main
+content_main
 *******************/
 .content_main{
     width: calc(100vw - 15%);
     position: absolute;
-    top: 15%;
+    top: 0;
     right: 0;
     padding: 20px 20px 400px 20px;
     background-color: #141822;
@@ -203,18 +244,19 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 150px;
 }
-h1{
-    margin-top: 20px;
+.content_main h1{
+    margin-top: 40px;
     color: white;
 }
 h2{
     font-size: 15px;
     color: #646464;
 }
-.menu_header_main  li:hover{
-    text-decoration: underline;
-    border-bottom: 2px solid greenyellow;
+
+.menu_header_main .head .heading_item{
+    border-bottom: 2px solid #ADFF2F;
 }
 .row{
     display: flex;
@@ -293,10 +335,70 @@ h2{
     background-image: url(../spotify/img/einaudi.jpeg);
 }
 /* effetti in hover immagini card */
+/* effetti sidebar hover */
+.home:hover,
+.search:hover,
+.library:hover{
+    border-left: 5px solid #ADFF2F;
+}
+.home:hover .text,
+.search:hover .text,
+.library:hover .text,
+.download:hover .text_download,
+.li_item:hover,
+.li_head:hover,
+.menu_header_main  .item:hover,
+#icon:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
 .card_song:hover .hidden_visibility{
     visibility: visible;
 }
-/* */
+.heading_item a:hover{
+    color: #646464;
+}
+.menu_header_main  .item:hover{
+    border-bottom: 2px solid #ADFF2F;
+}
+.li_head:hover .box_plus{
+    background-color: #ffffff;
+}
+.info_song:hover p{
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#play:hover{
+    transform: scale(1.8);
+    cursor: pointer;
+}
+/*******************  
+/content_main
+*******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*******************  
         FOOTER
 *******************/
@@ -387,7 +489,7 @@ h2{
     margin: 0 12px;
 }
 #play{
-    transform: scale(1.7);
+    transform: scale(1.5);
 }
 .bottom_player{
     justify-content: space-around;

@@ -34,12 +34,11 @@ body{
     margin-right: 20px;
     text-transform: uppercase;
 }
-.btn:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
 .hidden_visibility{
     visibility: hidden;
+}
+.d_flex {
+    display: flex;
 }
 /*******************  
       /UTILITY
@@ -341,6 +340,11 @@ h2{
 .library:hover{
     border-left: 5px solid #ADFF2F;
 }
+.btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .home:hover .text,
 .search:hover .text,
 .library:hover .text,
@@ -372,6 +376,11 @@ h2{
 #play:hover{
     transform: scale(1.8);
     cursor: pointer;
+}
+
+.volume:hover .volume_bar,
+.volume:hover .volume_btn {
+  visibility: visible;
 }
 /*******************  
 /content_main
@@ -494,18 +503,48 @@ h2{
 .bottom_player{
     justify-content: space-around;
 }
-.bottom_player .line{
-    background-color: #646464;
-    width: 450px;
-    height: 4px;
-    border-radius: 30px;
-}
-.bottom_player .line_white{
-    background-color: #ffffff;
-    width: 110px;
-    height: 4px;
-    border-radius: 30px;
-}
 .bottom_player p{
     margin: 0 10px;
 }
+.volume_settings.d_flex {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.volume {
+    width: 90%;
+    height: 6px;
+    background-color: #5A5A5A;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.power_volume.d_flex {
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+.volume_bar {
+    width: 88%;
+    height: 100%;
+    background-color: yellow;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    visibility: hidden;
+}
+
+.volume_btn {
+    width: 20px;
+    height: 17px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.power_volume.d_flex.right {
+    width: 100px;
+}
+
+

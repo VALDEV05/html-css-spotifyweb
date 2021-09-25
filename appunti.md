@@ -30,3 +30,4 @@ Effetti esercizi Spotify
         - [x] play_centrale scale1.8
         - [ ] Barre diventano #ADFF2F
     
+Sistemare sezione 

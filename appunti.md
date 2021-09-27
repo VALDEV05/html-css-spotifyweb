@@ -31,3 +31,39 @@ Effetti esercizi Spotify
         - [ ] Barre diventano #ADFF2F
     
 Sistemare sezione 
+
+
+
+
+8
+Ora abbiamo visto che il layout funziona, passo a lavorare con le media query.
+
+La prima media query da costruire con valori fino a 882px
+
+La sidecar rimane identica,
+Leader main con il bottone anche,
+Il menu del content va a capo,
+Le immagini stessa grandezza vanno a capo
+Foooter si restringe, forse barra scorrimento musica si restringe leggermente.
+
+
+
+La seconda media query da costruire con valori fino a 643px
+
+La sidecar rimane identica,
+L'header main con il bottone anche,
+Il menu del content va a capo sei formano due righe con 3 elementi ognuna,
+Le immagini stessa grandezza vanno a capo, due per riga.
+Foooter si restringe, ancora le icone si incolonnano,
+Sicuramente la barra dello scorrimento si rimpicciolerà notevolmente.
+
+La terza media query da costruire con valori fino a 556px
+
+La sidecar rimangono solo le icone di sinistra,
+L'header main con il bottone anche,
+Il menu del content medesimo della media query 1 Le immagini uguali alla media quei 1
+Foooter si restringe, ancora più piccolo.
+
+
+Per l'altezza, per far uscire la scrollbar laterale sulla playlist, bisogna impostare a Hidden a aside e a playlist, a ul impostiamo height 100%
+E overflow-y:auto

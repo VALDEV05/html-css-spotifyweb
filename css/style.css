@@ -13,7 +13,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 .list_none{
     list-style: none;
@@ -112,6 +112,10 @@ body{
     justify-content: end;
     padding-bottom: 10px;
 }
+.near_sidebar{
+    height: calc(100vh - 142px);
+    overflow: scroll;
+}
 /*******************  
   SIDE_BAR content
 *******************/
@@ -137,6 +141,7 @@ body{
 .playlist{
     color: #646464;
     padding-left: 20px;
+    overflow-y: scroll;
 }
 .playlist h2{
     text-transform: uppercase;
@@ -211,8 +216,6 @@ hr{
 content_main
 *******************/
 .content_main{
-    float: right;
-    width: calc(100vw - 222px);
     background-color: #141822;
     overflow-y: scroll;
 }
@@ -377,6 +380,7 @@ h2{
 }
 .content_footer{
     height: 75%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
